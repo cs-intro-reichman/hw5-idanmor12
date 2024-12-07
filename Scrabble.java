@@ -74,6 +74,8 @@ public class Scrabble {
 			}
 		}
 
+		score*= word.length();
+
 		if (MyString.subsetOf("runi", word)){
 			score += 10000;
 		}
@@ -164,7 +166,7 @@ public class Scrabble {
 		//testScrabbleScore();    
 		//testCreateHands();  
 		//testPlayHands();
-		//playGame();
+		playGame();
 	}
 
 	public static void testBuildingTheDictionary() {
