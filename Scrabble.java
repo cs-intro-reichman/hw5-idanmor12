@@ -68,7 +68,7 @@ public class Scrabble {
 		for (int i = 0; i < word.length(); i++) {
 			for (int j = 0; j < SCRABBLE_LETTER_VALUES.length; j++) {
 				if (word.charAt(i) == LETTERS[j]){
-					score += SCRABBLE_LETTER_VALUES[i];
+					score += SCRABBLE_LETTER_VALUES[j];
 					break;
 				}
 			}
@@ -163,10 +163,10 @@ public class Scrabble {
 	public static void main(String[] args) {
 		//// Uncomment the test you want to run
 		//testBuildingTheDictionary();  
-		//testScrabbleScore();    
+		testScrabbleScore();    
 		//testCreateHands();  
 		//testPlayHands();
-		playGame();
+		//playGame();
 	}
 
 	public static void testBuildingTheDictionary() {
@@ -179,8 +179,8 @@ public class Scrabble {
 	}
 	
 	public static void testScrabbleScore() {
-		System.out.println(wordScore("bee"));	
-		System.out.println(wordScore("babe"));
+		System.out.println(wordScore("cat"));	
+		System.out.println(wordScore("dog"));
 		System.out.println(wordScore("friendship"));
 		System.out.println(wordScore("running"));
 	}
